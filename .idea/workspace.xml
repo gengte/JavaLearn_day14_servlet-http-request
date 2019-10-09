@@ -3,16 +3,35 @@
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
       <artifact name="day14_servlet&amp;http&amp;request:war exploded" />
-      <artifact name="day14_test:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5229a78-4385-4e0b-856e-17ab793a6381" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gengte.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="b5229a78-4385-4e0b-856e-17ab793a6381" name="Default Changelist" comment="将原来外部day14_test模块删除，原文件移动到day14_servlet&amp;http&amp;request内。">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/libs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/day14_servlet_http_request_war_exploded/WEB-INF/classes/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/artifacts/day14_servlet_http_request_war_exploded/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/out/production/day14_servlet&amp;http&amp;request/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/domain/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/test/BeanUtilsTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/test/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/util/JDBCUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/web/servlet/FailServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/com/g/web/servlet/SuccessServlet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/druid.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/web/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/day14_servlet_http_request_war_exploded.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/artifacts/day14_servlet_http_request_war_exploded.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/day14_test_war_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/day14_servlet&amp;http&amp;request.iml" beforeDir="false" afterPath="$PROJECT_DIR$/day14_servlet&amp;http&amp;request.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/java笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/java笔记.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/day14_test_war_exploded/WEB-INF/classes/druid.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/day14_test_war_exploded/index.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/artifacts/day14_test_war_exploded/login.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/day14_test/druid.properties" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,6 +52,9 @@
     </option>
     <expand />
     <select />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="day14_servlet&amp;http&amp;request" />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -55,7 +77,9 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="localRepository" value="G:\maven_repository" />
+        <option name="mavenHome" value="G:/maven-3.6.2" />
+        <option name="userSettingsFile" value="G:\maven-3.6.2\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
     <option name="importingSettings">
@@ -68,7 +92,13 @@
     <option name="vmOptions" value="-Xms128m -Xmx512m -Duser.language=zh -Dfile.encoding=UTF-8" />
   </component>
   <component name="ProjectId" id="1RHFsNioqI723xXf4JUO02QRRK5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ChangesTree.GroupingKeys" value="" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="Downloaded.Files.Path.Enabled" value="true" />
     <property name="Repository.Attach.Annotations" value="false" />
@@ -77,19 +107,21 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="findjar.last.used.dir" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/web/WEB-INF/lib" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43235293" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.tabs" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="H:\gengte\java\day14_test\web\WEB-INF\lib" />
-      <recent name="H:\gengte\java\day14_test" />
-      <recent name="H:\gengte\java\day14_test\web\WEB-INF" />
-      <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request" />
+      <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request\web\WEB-INF\lib" />
+      <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request\web" />
+      <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request\web\WEB-INF" />
       <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request\src" />
+      <recent name="H:\gengte\java\day14_test\web\WEB-INF\lib" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="com.g.web.servlet" />
@@ -111,9 +143,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.BeanUtilsTest.Test">
-    <configuration name="BeanUtilsTest.Test" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="day14_test" />
+  <component name="RunManager" selected="Tomcat Server.Tomcat 9.0.24">
+    <configuration name="BeanUtilsTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day14_servlet&amp;http&amp;request" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.g.test.*" />
@@ -128,8 +160,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test.testLogin" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="day14_test" />
+    <configuration name="com.g.web.servlet in day14_servlet&amp;http&amp;request" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day14_servlet&amp;http&amp;request" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.g.web.servlet.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.g.web.servlet" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="day14_servlet&amp;http&amp;request" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="com.g.test.*" />
@@ -145,17 +191,12 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.24" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.24" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/demo2" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/login.html" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <deployment>
         <artifact name="day14_servlet&amp;http&amp;request:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/" />
-          </settings>
-        </artifact>
-        <artifact name="day14_test:war exploded">
-          <settings>
-            <option name="CONTEXT_PATH" value="/day14_test" />
           </settings>
         </artifact>
       </deployment>
@@ -218,16 +259,33 @@
       <method v="2">
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
-          <artifact name="day14_test:war exploded" />
           <artifact name="day14_servlet&amp;http&amp;request:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.BeanUtilsTest.Test" />
       <item itemvalue="JUnit.test.testLogin" />
+      <item itemvalue="JUnit.BeanUtilsTest.Test" />
+      <item itemvalue="JUnit.com.g.web.servlet in day14_servlet&amp;http&amp;request" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.24" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.BeanUtilsTest.Test" />
+        <item itemvalue="JUnit.test.testLogin" />
+        <item itemvalue="JUnit.com.g.web.servlet in day14_servlet&amp;http&amp;request" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand />
+          <select />
+        </treeState>
+      </serviceView>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -257,7 +315,24 @@
       <workItem from="1570525423059" duration="11000" />
       <workItem from="1570525744807" duration="1735000" />
       <workItem from="1570592461266" duration="2209000" />
+      <workItem from="1570603288027" duration="4477000" />
+      <workItem from="1570607789839" duration="4783000" />
     </task>
+    <task id="LOCAL-00001" summary="笔记+">
+      <created>1570603526510</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1570603526510</updated>
+    </task>
+    <task id="LOCAL-00002" summary="将原来外部day14_test模块删除，原文件移动到day14_servlet&amp;http&amp;request内。">
+      <created>1570611487320</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1570611487320</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -275,5 +350,16 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+    <MESSAGE value="笔记+" />
+    <MESSAGE value="将原来外部day14_test模块删除，原文件移动到day14_servlet&amp;http&amp;request内。" />
+    <option name="LAST_COMMIT_MESSAGE" value="将原来外部day14_test模块删除，原文件移动到day14_servlet&amp;http&amp;request内。" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/day14_servlet_http_request$com_g_web_servlet_in_day14_servlet_http_request.ic" NAME="com.g.web.servlet in day14_servlet&amp;http&amp;request Coverage Results" MODIFIED="1570607140499" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>com.g.web.servlet.*</FILTER>
+    </SUITE>
   </component>
 </project>

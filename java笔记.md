@@ -86,6 +86,15 @@
     * **BeanUtils**使用BeanUtils.populate()方法封装javaBean
 3. 查询用户存在，返回User对象，显示successServlet登录成功页面
 4. 查询不存在，返回Null，显示failServlet登录失败页面
+5. **注意**，模块已删除，其中的文件移动到day14_ser..模块中会产生一系列问题：
+    * 包路径问题
+    * 使用的库文件夹：
+        1. /web/WEB-INF/lib
+        2. /libs
+    * 检查File/Project Structure配置
+    * 检查iml文件中orderEntry节点中库路径问题
+    * 修改运行配置项中Tomcat相关设置
+    * 改web/login.html中form action路径
 
 ## JavaBean
 
