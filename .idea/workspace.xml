@@ -2,11 +2,18 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
+      <artifact name="day14_servlet&amp;http&amp;request:war exploded" />
       <artifact name="day14_test:war exploded" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b5229a78-4385-4e0b-856e-17ab793a6381" name="Default Changelist" comment="" />
+    <list default="true" id="b5229a78-4385-4e0b-856e-17ab793a6381" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/gengte.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/java笔记.md" beforeDir="false" afterPath="$PROJECT_DIR$/java笔记.md" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +41,9 @@
         <option value="Class" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="LogFilters">
     <option name="FILTER_ERRORS" value="false" />
@@ -64,28 +74,29 @@
     <property name="Repository.Attach.Annotations" value="false" />
     <property name="Repository.Attach.JavaDocs" value="false" />
     <property name="Repository.Attach.Sources" value="false" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../day14_test/web/WEB-INF/lib" />
-    <property name="project.structure.last.edited" value="Artifacts" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.43235293" />
-    <property name="settings.editor.selected.configurable" value="reference.idesettings.quicklists" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request" />
-      <recent name="H:\gengte\java\day14_test\src" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.g.web.servlet" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="H:\gengte\java\day14_test\web\WEB-INF\lib" />
       <recent name="H:\gengte\java\day14_test" />
       <recent name="H:\gengte\java\day14_test\web\WEB-INF" />
       <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request" />
       <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request\src" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.g.web.servlet" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="H:\gengte\java\day14_servlet&amp;http&amp;request" />
+      <recent name="H:\gengte\java\day14_test\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -101,7 +112,7 @@
     </option>
   </component>
   <component name="RunManager" selected="JUnit.BeanUtilsTest.Test">
-    <configuration name="BeanUtilsTest.Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="BeanUtilsTest.Test" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="day14_test" />
       <extension name="coverage">
         <pattern>
@@ -117,22 +128,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="day14_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.g.test.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.g.test" />
-      <option name="MAIN_CLASS_NAME" value="com.g.test.test" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="test.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="test.testLogin" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
       <module name="day14_test" />
       <extension name="coverage">
         <pattern>
@@ -149,9 +145,14 @@
       </method>
     </configuration>
     <configuration name="Tomcat 9.0.24" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.24" ALTERNATIVE_JRE_ENABLED="false">
-      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/day14_test/login.html" />
+      <option name="OPEN_IN_BROWSER_URL" value="http://localhost:8080/demo2" />
       <option name="BROWSER_ID" value="a7bb68e0-33c0-4d6f-a81a-aac1fdb870c8" />
       <deployment>
+        <artifact name="day14_servlet&amp;http&amp;request:war exploded">
+          <settings>
+            <option name="CONTEXT_PATH" value="/" />
+          </settings>
+        </artifact>
         <artifact name="day14_test:war exploded">
           <settings>
             <option name="CONTEXT_PATH" value="/day14_test" />
@@ -218,22 +219,15 @@
         <option name="Make" enabled="true" />
         <option name="BuildArtifacts" enabled="true">
           <artifact name="day14_test:war exploded" />
+          <artifact name="day14_servlet&amp;http&amp;request:war exploded" />
         </option>
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.test" />
+      <item itemvalue="JUnit.BeanUtilsTest.Test" />
       <item itemvalue="JUnit.test.testLogin" />
       <item itemvalue="Tomcat Server.Tomcat 9.0.24" />
-      <item itemvalue="JUnit.BeanUtilsTest.Test" />
     </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.BeanUtilsTest.Test" />
-        <item itemvalue="JUnit.test.testLogin" />
-        <item itemvalue="JUnit.test" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -249,10 +243,37 @@
       <workItem from="1569376885469" duration="5675000" />
       <workItem from="1569382802996" duration="8300000" />
       <workItem from="1569479017964" duration="4803000" />
+      <workItem from="1569489176494" duration="3113000" />
+      <workItem from="1569547819065" duration="7900000" />
+      <workItem from="1569721983598" duration="1869000" />
+      <workItem from="1569733307665" duration="4990000" />
+      <workItem from="1569807417458" duration="311000" />
+      <workItem from="1569808256193" duration="549000" />
+      <workItem from="1569808831191" duration="2465000" />
+      <workItem from="1569811695140" duration="1878000" />
+      <workItem from="1569827822567" duration="55000" />
+      <workItem from="1569829041576" duration="1838000" />
+      <workItem from="1570517693115" duration="1586000" />
+      <workItem from="1570525423059" duration="11000" />
+      <workItem from="1570525744807" duration="1735000" />
+      <workItem from="1570592461266" duration="2209000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

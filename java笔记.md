@@ -1,8 +1,8 @@
 # java笔记
 
-## Servlet
+## Servlet [bili](https://www.bilibili.com/video/av66880352/?p=114)
 
-1. 概念
+1. [菜鸟](https://www.runoob.com/servlet/servlet-intro.html)
 2. 步骤
 3. 执行原理
 4. 生命周期
@@ -44,16 +44,46 @@
     * getHeader()
 3. 获取请求体数据
 
-## day14_test 登录案例
+## Response
+
+## ServletContext
+
+1. 概念
+2. 获取：
+    1. 通过request对象 request.getServletContext();
+    2. 通过HttpServlet this.getServletContext();
+3. 功能
+    1. 获取MIME类型
+    2. 域对象：共享数据
+        * setAttribute(String name, Object value)
+        * getAttribute(String name)
+        * removeAttribute(String name)
+        * 注意：ServletContext对象范围是所有用户所有请求的数据
+    3. 获取文件的真实（服务器）路径
+
+## Session
+
+## Cookie 客户端会话
+
+1. 原理：响应头set-cookie和请求头cookie
+2. 使用
+
+    ```
+        new Cookie(String name, String value)
+        response.addCookie(Cookie cookie)
+        Cookie[] cookies = request.getCookies()
+    ```
+
+## day14_test 登录案例 [bili](https://www.bilibili.com/video/av66880352/?p=138)
 
 1. login.html页面，输入用户名和密码，登录按钮
     * username
     * password
     * form submit button
 2. 通过输入的用户名、密码查询数据库
-    * Druid数据库连接池技术
-    * JdbcTemplate技术封装JDBC
-    * 使用BeanUtils.populate()方法封装javaBean
+    * **Druid数据库连接池**技术
+    * **JdbcTemplate**技术封装JDBC
+    * **BeanUtils**使用BeanUtils.populate()方法封装javaBean
 3. 查询用户存在，返回User对象，显示successServlet登录成功页面
 4. 查询不存在，返回Null，显示failServlet登录失败页面
 
@@ -72,6 +102,42 @@
         属性；
         getUsername() --> Username --> username
     3. 方法：
-        1. setProperty()
-        2. getProperty()
-        3. populate()
+        1. setProperty(Object bean, String name, Object value)
+        2. getProperty(Object bean, String name)
+        3. populate(Object bean, Map<String, ? extends Object> properties)
+
+## redis [bili](https://www.bilibili.com/video/av66880352/?p=287)
+
+1. [redis中文网](https://www.redis.net.cn/)
+2. Key Value形式存储，Value可存放的数据类型
+    * 字符串
+    * 哈希
+    * 列表
+    * 集合
+    * 有序集合
+3. Jedis
+    * Java客户端
+    * jedis的jar包
+    * 使用：
+        1. [server](G:\redis-2.4.5-win64\redis-server.exe)
+        2. java code
+
+            ```
+               //1.获取连接
+               Jedis jedis = new Jedis("localhost", 6379);
+               //2. 操作
+               jedis.set("username", "zhangsan");
+               //3. 关闭连接
+               jedis.close();
+            ```
+
+    * 方法：
+        * 字符串 set get
+        * 哈希 hset hget
+        * 列表 lpush rpush lpop rpop lrange
+        * 集合 sadd smembers
+        * 有序集合 zadd zrange
+    * Jedis连接
+        * JedisPool
+        * JedisPoolUtils工具类
+
